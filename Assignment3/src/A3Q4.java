@@ -2,10 +2,9 @@ import java.math.BigInteger;
 import java.util.Scanner;
 
 public class A3Q4 {
-    private static Scanner scanner;
     public static void main(String[] args){
-        scanner=new Scanner(System.in);
-        long T=scanner.nextLong();
+        Scanner scanner = new Scanner(System.in);
+        long T= scanner.nextLong();
         for (long i = 0; i < T; i++) {
             outRow(scanner.nextLong());
         }
@@ -24,8 +23,7 @@ public class A3Q4 {
         long c=a-b-1;
         for (long i = 0; i < c; i++) ch=ch.multiply(BigInteger.valueOf(--aa));
         mt=new BigInteger(String.valueOf(a-b));
-        long d=a-b;
-        long dd=d;
+        var dd= a-b;
         for (long i = 0; i < c; i++) mt=mt.multiply(BigInteger.valueOf(--dd));
         return ch.divide(mt);
     }

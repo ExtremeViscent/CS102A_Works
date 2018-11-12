@@ -24,28 +24,24 @@ public class A3Q6 {
                     try {
                         System.out.print(arr[x+i][y]+" ");cont++;
                     } catch (Exception e) {
-                        continue;
                     }
                     x+=unit;counter++;break;}
                 case 0:{dir++;for (int i = 0; i < unit; i++)
                     try {
                         System.out.print(arr[x][y+i]+" ");cont++;
                     } catch (Exception e) {
-                        continue;
                     }
                     y+=unit;counter++;break;}
                 case 3:{dir=0;for (int i = 0; i < unit; i++)
                     try {
                         System.out.print(arr[x-i][y]+" ");cont++;
                     } catch (Exception e) {
-                        continue;
                     }
                     x-=unit;counter++;break;}
                 case 2:{dir++;for (int i = 0; i < unit; i++)
                     try {
                         System.out.print(arr[x][y-i]+" ");cont++;
                     } catch (Exception e) {
-                        continue;
                     }
                     y-=unit;counter++;break;}
             }
