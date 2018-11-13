@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class A3Q7 {
@@ -8,7 +7,7 @@ public class A3Q7 {
     private static double[][] kernel;
     private static int[][] image;
     private static int[][] newImage;
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         scanner = new Scanner(System.in);
         int T = scanner.nextInt();
         for (int i = 0; i < T; i++) {
@@ -40,12 +39,8 @@ public class A3Q7 {
         }
     }
     private static void convolution(int l,int c){
-        int oriWidth=0,oriHeight=0;
-        if (l-kernel.length/2<0)oriHeight+=l+1;
-        else oriHeight+=kernel.length/2+1;
-        if (l+kernel.length/2>image.length-1)
-        if (c-kernel.length/2<0)oriWidth+=c+1;
-        else oriWidth+=kernel.length/2+1;
+        if (l+kernel.length/2>image.length-1) {
+        }
         tmpMatrix=new double[kernel.length][kernel.length];
         defineStat=new boolean[kernel.length][kernel.length];
         initTemp(l,c);
