@@ -20,7 +20,7 @@ public class RectangleTest {
         for (Rectangle rectangle:rectangles) {
             if (rectangle.isValid()) {
                 System.out.println(rectangle);
-                rectangle.draw();
+                //rectangle.draw();
             }
         }
     }
