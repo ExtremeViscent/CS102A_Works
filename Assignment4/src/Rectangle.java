@@ -65,4 +65,16 @@ public class Rectangle {
     public boolean intersect(Rectangle a){
         return intersect(a,this);
     }
+    public boolean isValid(){
+        return (width<=5&&width>=0&&height<=5&&height>=0&&x<10&&x>-10&&y<10&&y>-10);
+    }
+    public boolean isInBoundary(){
+        return ((x-width/2)>-10&&(x+width/2)<10&&(y-height/2)>-10&&(y+height/2)<10);
+    }
+    public void draw(){
+        if (this.isValid()){
+            StdDraw.setPenColor(color);
+            StdDraw.filledRectangle(x,y,width/2,height/2);
+        }
+    }
 }
