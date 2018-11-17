@@ -17,8 +17,12 @@ public class RectangleTest {
         }
         StdDraw.setXscale(-10,10);
         StdDraw.setYscale(-10,10);
+        Rectangle firstValid=new Rectangle(0,0);
+        for (Rectangle rectangle:rectangles){
+            if (rectangle.isValid())firstValid=rectangle;
+        }
         for (Rectangle rectangle:rectangles) {
-            if (rectangle.isValid()) {
+            if (rectangle.isValid()&& !rectangle.intersect(firstValid)) {
                 System.out.println(rectangle);
                 //rectangle.draw();
             }
