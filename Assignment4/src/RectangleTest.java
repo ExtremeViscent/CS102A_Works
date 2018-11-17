@@ -22,7 +22,7 @@ public class RectangleTest {
             if (rectangle.isValid())firstValid=rectangle;
         }
         for (Rectangle rectangle:rectangles) {
-            if (rectangle.isValid()&& !rectangle.intersect(firstValid)) {
+            if (rectangle.isValid() && rectangle == firstValid || !rectangle.intersect(firstValid)) {
                 System.out.println(rectangle);
                 //rectangle.draw();
             }
