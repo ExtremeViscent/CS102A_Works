@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Assignment4/Assignment4.iml" filepath="$PROJECT_DIR$/Assignment4/Assignment4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment5/Assignment5.iml" filepath="$PROJECT_DIR$/Assignment5/Assignment5.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/CS102A_Works.iml" filepath="$PROJECT_DIR$/.idea/CS102A_Works.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercise11/Exercise11.iml" filepath="$PROJECT_DIR$/Exercise11/Exercise11.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lab7/Lab7.iml" filepath="$PROJECT_DIR$/Lab7/Lab7.iml" />

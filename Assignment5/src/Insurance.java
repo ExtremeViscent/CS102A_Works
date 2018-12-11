@@ -1,0 +1,3 @@
+interface Insurance {
+	void InsuanceDescription();
+}
